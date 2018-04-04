@@ -346,8 +346,9 @@ body {
     overflow: hidden; }
   .story__img {
     height: 100%;
-    transform: skewX(12deg);
     backface-visibility: none; }
+  .story__text {
+    transform: skewX(12deg); }
   .story__caption {
     position: absolute;
     top: 50%;

@@ -24,8 +24,11 @@
 
   &__img {
     height: 100%;
-    transform: skewX(12deg);
     backface-visibility: none;
+  }
+
+  &__text {
+    transform: skewX(12deg);
   }
 
   &__caption {
