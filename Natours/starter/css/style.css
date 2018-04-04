@@ -114,7 +114,7 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -133,7 +133,8 @@ body {
     transform: scaleX(1.5) scaleY(1.4);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 5rem 1rem rgba(0, 0, 0, 0.2); }
 
