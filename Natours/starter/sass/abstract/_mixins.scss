@@ -30,6 +30,8 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 
+ORDER: BASED + Typography > general layout + grid > page layout > components
+
 1em = 16px
 */
 
@@ -39,7 +41,7 @@ $breakpoint argument choices:
   }
 
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25) { @content };   // 900px
+    @media (max-width: 56.25em) { @content };   // 900px
   }
 
   @if $breakpoint == tab-land {
@@ -49,5 +51,4 @@ $breakpoint argument choices:
   @if $breakpoint == big-desktop {
     @media (max-width: 112.5em) { @content };  // 1800px
   }
-
 }
