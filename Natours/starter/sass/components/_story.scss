@@ -31,6 +31,12 @@
     position: relative;
     overflow: hidden;
 
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      height: 95vh;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    }
+
     @include respond(phone) {
       transform: translateX(-3rem) skewX(0);
     }
