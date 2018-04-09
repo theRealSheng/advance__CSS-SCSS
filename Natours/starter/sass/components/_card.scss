@@ -2,10 +2,10 @@
   perspective: 150rem;
   -moz-perspective: 150rem; // Fro firefox
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
   &__side {
-    height: 50rem;
+    height: 52rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -169,7 +169,10 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+
+    @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) { 
     height: auto;
     border-radius: $radius-small;
     background-color: $color-white;
